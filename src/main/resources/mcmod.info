@@ -1,0 +1,16 @@
+[
+{
+  "modid": "secureenderstorage",
+  "name": "Secure Ender Storage",
+  "description": "Prevents players from modifying colors of enderchests, from Ender Storage, that is owned by other people.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Adneths"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": ["EnderStorage"]
+}
+]
