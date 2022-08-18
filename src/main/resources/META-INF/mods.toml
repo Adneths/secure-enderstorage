@@ -1,0 +1,50 @@
+# The name of the mod loader type to load - for regular FML @Mod mods it should be javafml
+modLoader="javafml" #mandatory
+# A version range to match for said mod loader - for regular FML @Mod it will be the forge version
+loaderVersion="[28,)" #mandatory (28 is current forge version)
+# A URL to refer people to when problems occur with this mod
+issueTrackerURL="https://github.com/Adneths/secure-enderstorage" #optional
+license="The MIT License (MIT)"
+
+
+[[mods]] #mandatory
+modId="secureenderstorage" #mandatory
+version="${file.jarVersion}" #mandatory
+displayName="Secure EnderStorage" #mandatory
+logoFile="logo.png" #optional
+authors="Adneths"
+
+#(#mandatory)
+description='''
+Prevents players from modifying colors of enderchests, from Ender Storage, that is owned by other people.
+'''
+
+[[dependencies.secureenderstorage]]
+    # the modid of the dependency
+    modId="enderstorage" #mandatory
+    # Does this dependency have to exist - if not, ordering below must be specified
+    mandatory=true #mandatory
+    # The version range of the dependency
+    versionRange="[1.18.2-2.9.0+,)" #mandatory
+    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+    ordering="AFTER"
+    # Side this dependency is applied on - BOTH, CLIENT or SERVER
+    side="BOTH"
+[[dependencies.examplemod]]
+    # the modid of the dependency
+    modId="forge" #mandatory
+    # Does this dependency have to exist - if not, ordering below must be specified
+    mandatory=true #mandatory
+    # The version range of the dependency
+    versionRange="[40,)" #mandatory
+    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+    ordering="NONE"
+    # Side this dependency is applied on - BOTH, CLIENT or SERVER
+    side="BOTH"
+[[dependencies.examplemod]]
+    modId="minecraft"
+    mandatory=true
+# This version range declares a minimum of the current minecraft version up to but not including the next major version
+    versionRange="[1.18.2,1.19)"
+    ordering="NONE"
+    side="BOTH"
