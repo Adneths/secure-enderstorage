@@ -12,11 +12,6 @@ public class Config
 
 	public static ForgeConfigSpec CONFIG;
 
-	public static ForgeConfigSpec.IntValue FIRSTBLOCK_MAXPOWER;
-	public static ForgeConfigSpec.IntValue FIRSTBLOCK_GENERATE;
-	public static ForgeConfigSpec.IntValue FIRSTBLOCK_SEND;
-	public static ForgeConfigSpec.IntValue FIRSTBLOCK_TICKS;
-
 	public static ForgeConfigSpec.BooleanValue BREAKABLE;
 	public static ForgeConfigSpec.BooleanValue OBSIDIAN;
 	public static ForgeConfigSpec.BooleanValue LOCKED;
